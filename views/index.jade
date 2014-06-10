@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #canvas-wrapper
+    canvas#map-canvas(width='1024', height='1024')
+  #list-wrapper.list-wrapper(style='display: none;')
+    input#search(type='text', placeholder='Search for an Airline')
+    ul#selected-airlines
+    .list-container
+        ul#airline-list
